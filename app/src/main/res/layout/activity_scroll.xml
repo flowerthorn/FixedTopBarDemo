@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_contentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_headerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ad29e1"
+                android:gravity="center"
+                android:text="我是头部布局"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_topView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#3be42f"
+                    android:gravity="center"
+                    android:text="我是固定的布局"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_contentView"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:background="#dc7f28"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="160dp"
+                android:text="我是内容布局"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_fixedView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

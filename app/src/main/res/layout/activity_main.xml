@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="吸顶效果的几种实现方式:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_two_header"
+        style="@style/btn_style"
+        android:onClick="onClickTwoTopBar"
+        android:text="1. 通过隐藏/显示 两个一模一样的顶部栏" />
+
+    <Button
+        android:id="@+id/btn_listview"
+        style="@style/btn_style"
+        android:onClick="onClickListView"
+        android:text="2. 通过listview" />
+
+    <Button
+        android:id="@+id/btn_one_header"
+        style="@style/btn_style"
+        android:onClick="onClickOneTopBar"
+        android:text="3. 通过动态添加移除 一个顶部栏" />
+
+    <Button
+        android:id="@+id/btn_material_design"
+        style="@style/btn_style"
+        android:onClick="onClickMaterialDesign"
+        android:text="4. 通过android5.0的MaterialDesign风格" />
+
+    <Button
+        android:id="@+id/btn_rv_decoration"
+        style="@style/btn_style"
+        android:onClick="onClickDecoration"
+        android:text="5. 通过RecyclerView的ItemDecoration分割线" />
+
+    <Button
+        android:id="@+id/btn_group_and_decoration"
+        style="@style/btn_style"
+        android:onClick="onClickGroupAndDecoration"
+        android:text="扩展实现:分组+吸顶效果的实现" />
+</LinearLayout>
